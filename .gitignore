@@ -1,0 +1,27 @@
+# Node / frontend
+node_modules/
+dist/
+.vite/
+*.log
+.DS_Store
+
+# Local env files
+.env
+**/.env
+!**/.env.example
+
+# Python / backend
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Editor
+.vscode/
+.idea/
+*.swp
