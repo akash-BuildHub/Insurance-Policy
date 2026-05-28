@@ -1,4 +1,4 @@
-# PolicyMate AI — Backend (FastAPI + PostgreSQL)
+# AI Insurance Policy — Backend (FastAPI + PostgreSQL)
 
 REST API that powers the React frontend. Pure Python — no third-party hosted services.
 
@@ -45,9 +45,9 @@ Any recent Postgres works. Create the database and a user:
 
 ```sql
 -- run in psql as the superuser
-CREATE USER policymate WITH PASSWORD 'policymate';
-CREATE DATABASE policymate OWNER policymate;
-GRANT ALL PRIVILEGES ON DATABASE policymate TO policymate;
+CREATE USER ai_insurance_policy WITH PASSWORD 'ai_insurance_policy';
+CREATE DATABASE ai_insurance_policy OWNER ai_insurance_policy;
+GRANT ALL PRIVILEGES ON DATABASE ai_insurance_policy TO ai_insurance_policy;
 ```
 
 ### 2) Create a Python virtual environment
@@ -70,11 +70,11 @@ pip install -r requirements.txt
 Copy `.env.example` to `.env` and edit if needed:
 
 ```env
-DATABASE_URL=postgresql+psycopg://policymate:policymate@localhost:5432/policymate
+DATABASE_URL=postgresql+psycopg://ai_insurance_policy:ai_insurance_policy@localhost:5432/ai_insurance_policy
 JWT_SECRET=change-this-to-a-long-random-string
 JWT_EXPIRES_MINUTES=1440
 CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
-INITIAL_ADMIN_EMAIL=admin@policymate.local
+INITIAL_ADMIN_EMAIL=admin@ai-insurance-policy.local
 ```
 
 `INITIAL_ADMIN_EMAIL` — the first user that signs up with this email is auto-promoted to
@@ -171,6 +171,6 @@ UPDATE users SET role = 'admin' WHERE email = 'you@example.com';
 
 ## Disclaimer
 
-PolicyMate AI is an academic prototype. Insurance company names, policy details, premiums,
+AI Insurance Policy is an academic prototype. Insurance company names, policy details, premiums,
 claim ratios, and benefits are **synthetic and illustrative**. Verify policy terms with
 the official insurance provider before any purchase decision.

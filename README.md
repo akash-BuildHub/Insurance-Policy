@@ -1,4 +1,4 @@
-# PolicyMate AI — AI-Powered Personalized Health Insurance Recommendation System
+# AI Insurance Policy — AI-Powered Personalized Health Insurance Recommendation System
 
 > **Academic final-year project.** Not licensed financial or insurance advice. All policy
 > data is **synthetic** and illustrative.
@@ -79,9 +79,9 @@ Three clearly separated tiers — no third-party hosted services:
 
 ```sql
 -- Run as a Postgres superuser, e.g. via `psql -U postgres`
-CREATE USER policymate WITH PASSWORD 'policymate';
-CREATE DATABASE policymate OWNER policymate;
-GRANT ALL PRIVILEGES ON DATABASE policymate TO policymate;
+CREATE USER ai_insurance_policy WITH PASSWORD 'ai_insurance_policy';
+CREATE DATABASE ai_insurance_policy OWNER ai_insurance_policy;
+GRANT ALL PRIVILEGES ON DATABASE ai_insurance_policy TO ai_insurance_policy;
 ```
 
 ### 2) One-time install (backend deps + frontend deps)
@@ -190,7 +190,7 @@ overview:
 
 ## Disclaimer
 
-> **PolicyMate AI is an academic prototype for insurance policy recommendation. It does
+> **AI Insurance Policy is an academic prototype for insurance policy recommendation. It does
 > not provide licensed financial, legal, or insurance advice. All insurance company names,
 > policy names, premiums, coverage amounts, claim settlement ratios, and benefits are
 > synthetic and illustrative. Users must verify policy terms with the official insurance

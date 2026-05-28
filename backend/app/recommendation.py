@@ -1,4 +1,4 @@
-"""PolicyMate AI — recommendation engine (Python port).
+"""AI Insurance Policy — recommendation engine (Python port).
 
 Hybrid pipeline:
   1. Rule-based eligibility filtering

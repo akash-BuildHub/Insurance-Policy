@@ -1,4 +1,4 @@
-# PolicyMate AI — Frontend (React + Vite SPA)
+# AI Insurance Policy — Frontend (React + Vite SPA)
 
 A pure single-page React app that talks to the FastAPI backend over REST.
 
@@ -108,7 +108,7 @@ npm run preview
 
 ## Auth model
 
-- JWT issued by the backend is stored in `localStorage` under `policymate.token`.
+- JWT issued by the backend is stored in `localStorage` under `ai-insurance-policy.token`.
 - Every authenticated request goes through `src/lib/api.ts` which attaches
   `Authorization: Bearer <token>`.
 - `<AuthProvider>` (in `src/lib/auth.tsx`) on mount calls `GET /api/auth/me` to validate
